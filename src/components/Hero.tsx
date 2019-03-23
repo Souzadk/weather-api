@@ -1,20 +1,29 @@
 import * as React from "react";
 import Forecast from "./Forecast";
 
-class Hero extends React.Component {
+export interface Props {
+  date: string;
+  city: string;
+  country: string;
+  temp: string;
+  windspeed: string;
+  humidity: string;
+}
+
+class Hero extends React.Component<Props> {
   render() {
     return (
       <div className="full-width">
         <section className="container hero-wrapper">
           <Forecast
             isHighlight={true}
-            date={'Today'}
-            city={'Aalborg'}
-            country={'DK'}
-            temp={'15'}
-            windspeed={'2m/s'}
-            humidity={'87'}
-          ></Forecast>
+            date={this.props.date}
+            city={this.props.city}
+            country={this.props.country}
+            temp={this.props.temp}
+            windspeed={this.props.windspeed}
+            humidity={this.props.humidity}
+          />
           <Forecast
             isHighlight={false}
             date={'March 11'}
@@ -23,7 +32,7 @@ class Hero extends React.Component {
             temp={'8'}
             windspeed={'2m/s'}
             humidity={'87'}
-          ></Forecast>
+          />
           <Forecast
             isHighlight={false}
             date={'March 12'}
@@ -32,7 +41,7 @@ class Hero extends React.Component {
             temp={'-3'}
             windspeed={'2m/s'}
             humidity={'87'}
-          ></Forecast>
+          />
           <Forecast
             isHighlight={false}
             date={'March 13'}
@@ -41,7 +50,7 @@ class Hero extends React.Component {
             temp={'-8'}
             windspeed={'2m/s'}
             humidity={'87'}
-          ></Forecast>
+          />
           <Forecast
             isHighlight={false}
             date={'March 14'}
@@ -50,7 +59,7 @@ class Hero extends React.Component {
             temp={'-10'}
             windspeed={'2m/s'}
             humidity={'87'}
-          ></Forecast>
+          />
         </section>
       </div>
     );
