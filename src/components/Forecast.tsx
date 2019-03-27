@@ -25,11 +25,11 @@ class Forecast extends React.Component<Props> {
             <div>
               <div className="wind">
                 <span className="title">Wind</span>
-                <span className="value">{this.props.weather.windspeed}</span>
+                <span className="value">{this.props.weather.windspeed}<span> km/t</span></span>
               </div>
               <div className="humidity">
                 <span className="title">Humidity</span>
-                <span className="value">{this.props.weather.humidity}</span>
+                <span className="value">{this.props.weather.humidity}<span> %</span></span>
               </div>
             </div>
           </div> :
