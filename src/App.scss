@@ -151,7 +151,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    svg {
+    img {
       height: auto;
       width: 150px;
       fill: #fff;
@@ -166,7 +166,7 @@ html {
   .wind, .humidity {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .humidity {
     margin-top: 10px;
@@ -181,7 +181,7 @@ html {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.50);
   .date {
@@ -193,13 +193,15 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    svg {
+    margin-top: 40px;
+    img {
       height: auto;
       width: 120px;
       fill: #fff;
+      margin-bottom: 10px;
     }
     .degrees {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: bold;
       text-align: center;
     }

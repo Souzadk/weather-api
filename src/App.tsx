@@ -38,7 +38,9 @@ class App extends Component<Props, State> {
       const temporary = new WeatherInfo(data.city.name,
         data.city.country,
         data.list[i].dt_txt,
-        data.list[i].main.temp,
+        data.list[i].weather[0].icon + ".svg", // Adding the image type
+        data.list[i].weather[0].description,
+        data.list[i].main.temp.toFixed(1), // Maximum of 1 decimal
         data.list[i].main.humidity,
         data.list[i].wind.speed)
       tempForecast.push(temporary);
@@ -46,6 +48,7 @@ class App extends Component<Props, State> {
     this.setState({
       Forecast: [...tempForecast],
     });
+
   }
   render() {
     return (

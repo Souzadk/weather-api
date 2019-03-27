@@ -1,5 +1,4 @@
 import * as React from "react";
-import { ReactComponent as Weather } from "../images/weather-icons/wi-day-cloudy.svg";
 import WeatherInfo from "../types/WeatherInfo";
 
 export interface Props {
@@ -18,7 +17,7 @@ class Forecast extends React.Component<Props> {
               <span className="location">{this.props.weather.city}</span><span className="location">, </span><span className="location">{this.props.weather.country}</span>
             </div>
             <div className="icon">
-              <Weather></Weather>
+              <img src={require("../images/weather-icons/" + this.props.weather.icon)} alt={this.props.weather.desc} />
               <div>
                 <span className="degrees">{this.props.weather.temp}</span><span className="degrees"> °</span>
               </div>
@@ -39,7 +38,7 @@ class Forecast extends React.Component<Props> {
               <p className="date">{this.props.weather.date}</p>
             </div>
             <div className="icon">
-              <Weather></Weather>
+              <img src={require("../images/weather-icons/" + this.props.weather.icon)} alt={this.props.weather.desc} />
               <div>
                 <span className="degrees">{this.props.weather.temp}</span><span className="degrees"> °</span>
               </div>
