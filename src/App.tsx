@@ -4,7 +4,6 @@ import Menu from './components/Menu';
 import Hero from './components/Hero';
 import About from './components/About';
 import WeatherInfo from './types/WeatherInfo';
-import { getPriority } from 'os';
 
 const API_KEY = "0235e22f56d7ab60440424af0f7f44a6";
 
@@ -29,7 +28,7 @@ class App extends Component<Props, State> {
     });
     this.getWeatherFromIp();
   }
-  getWeatherFromIp = async () => { // Get City + Country and Fetch Weather on Load
+  getWeatherFromIp = async () => { // Get City + Country and Fetch Weather on Load from IP Location
     const api_call = await fetch(`http://ip-api.com/json/?fields=status,message,countryCode,city,timezone,query`);
     const data = await api_call.json();
     console.log(data);
