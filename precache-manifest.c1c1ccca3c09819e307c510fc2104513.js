@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/weather-api/static/media/10n.e3b6449a.svg"
   },
   {
-    "revision": "d5f4e9068d039d11df87",
+    "revision": "ed405887b3d528881bb1",
     "url": "/weather-api/static/css/main.ee2f8afa.chunk.css"
   },
   {
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/weather-api/static/media/10d.4183e7db.svg"
   },
   {
-    "revision": "d5f4e9068d039d11df87",
-    "url": "/weather-api/static/js/main.b3ced14b.chunk.js"
+    "revision": "ed405887b3d528881bb1",
+    "url": "/weather-api/static/js/main.a83752df.chunk.js"
   },
   {
     "revision": "c67b6ab18f5e5cd9a8b682aa44975bcd",
@@ -124,7 +124,7 @@ self.__precacheManifest = [
     "url": "/weather-api/static/media/wi-night-alt-sleet.0bda2fbb.svg"
   },
   {
-    "revision": "9207d452547091dfeecde61f1255e923",
+    "revision": "d106b99605268d52bf552db5a3a5ec7a",
     "url": "/weather-api/index.html"
   }
 ];
